@@ -1,0 +1,64 @@
+
+
+.social-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    font-family: 'Montserrat', sans-serif; 
+    animation: fadeIn 1s ease-out; 
+}
+
+.creator-info {
+    margin-top: 15px;
+}
+
+.creator-info p {
+    margin-bottom: 5px;
+}
+
+.creator-info a {
+    margin-right: 10px;
+    color: #007bff;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.creator-info a:hover {
+    transform: scale(1.2) rotate(5deg); 
+}
+
+
+@keyframes shakeIcons {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.creator-info a:hover i {
+    animation: shakeIcons 0.5s ease-in-out; 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+}
+

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2e3b4e, #1b2838);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    text-align: center;
+    color: #fbfbfb;
+    background-color: #343a40;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-image {
+    border-radius: 20%;
+    margin-bottom: 20px;
+    max-width: 100px; /* Defina a largura máxima desejada */
+    height: auto; /* Mantenha a proporção original da imagem */
+}
+
+h1 {
+    color: #3498db;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #95a5a6;
+    margin-bottom: 30px;
+}
+
+.user-name {
+    color: #3498db;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+a.btn,
+a.btn-back {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+}
+
+a.btn {
+    background-color: #3498db;
+}
+
+a.btn:hover {
+    background-color: #217dbb;
+}
+
+a.btn-back {
+    background-color: #e74c3c;
+}
+
+a.btn-back:hover {
+    background-color: #c0392b;
+}
